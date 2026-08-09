@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#123a78">
+<meta name="description" content="MRH EDUCATION — English and Child Development & Pedagogy learning platform by MRH (M.A. English, B.Ed.)">
+<title>MRH EDUCATION | English & CDP</title>
+<style>
+:root{--navy:#123a78;--blue:#2563c7;--gold:#d9a441;--bg:#f5f8fc;--ink:#10213a;--muted:#5e6b7e;--white:#fff;--line:#dfe6ef}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+header{background:linear-gradient(135deg,#0d2e62,#2563c7);color:white;padding:18px 16px;position:sticky;top:0;z-index:20;box-shadow:0 3px 15px #0002}
+.header{max-width:1100px;margin:auto;display:flex;align-items:center;gap:12px}.logo{width:54px;height:54px;border-radius:15px;background:#fff;color:var(--navy);display:grid;place-items:center;font-size:19px;font-weight:900;box-shadow:0 5px 15px #0003}.brand h1{margin:0;font-size:23px}.brand p{margin:0;font-size:12px;opacity:.9}.lang{margin-left:auto;border:1px solid #ffffff66;background:#ffffff16;color:white;border-radius:10px;padding:9px 12px}
+nav{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:90px;z-index:15;overflow:auto;white-space:nowrap}.nav{max-width:1100px;margin:auto;display:flex;gap:5px;padding:8px}.nav button{border:0;background:white;color:var(--navy);padding:10px 12px;border-radius:9px;font-weight:650}.nav button:hover{background:#eef4ff}
+main{max-width:1100px;margin:auto;padding:20px 14px 75px}.hero{background:linear-gradient(135deg,#fff,#eaf2ff);border:1px solid #d8e4f5;border-radius:20px;padding:28px 20px;margin-bottom:16px}.hero h2{font-size:31px;line-height:1.2;margin:0 0 10px}.hero p{color:var(--muted);max-width:760px}.buttons{display:flex;flex-wrap:wrap;gap:8px}.primary,.secondary{padding:11px 15px;border-radius:10px;font-weight:750;border:0;cursor:pointer}.primary{background:var(--blue);color:#fff}.secondary{background:#fff;color:var(--navy);border:1px solid #b8c8df}
+.section{margin-top:22px}.section h2{font-size:23px;margin:0 0 12px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.card{background:#fff;border:1px solid var(--line);border-radius:15px;padding:16px;box-shadow:0 3px 12px #172b4d08}.card h3{margin:5px 0}.icon{font-size:28px}.badge{display:inline-block;background:#eef4ff;color:var(--navy);border-radius:20px;padding:4px 9px;font-size:11px;font-weight:700}.small{font-size:12px;color:var(--muted)}.contact{display:grid;gap:5px}.profile{display:grid;grid-template-columns:100px 1fr;gap:16px;align-items:center}.avatar{width:100px;height:100px;border-radius:50%;background:linear-gradient(135deg,#123a78,#d9a441);display:grid;place-items:center;color:#fff;font-size:27px;font-weight:900}
+form{display:grid;gap:8px}input,textarea,select{width:100%;font:inherit;padding:11px;border:1px solid #cfd8e5;border-radius:9px;background:#fff}textarea{min-height:100px}footer{background:#0d2e62;color:#dce8f8;text-align:center;padding:25px 14px}.footer-links{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;margin:10px 0}a{color:inherit;text-decoration:none}
+.hidden{display:none!important}.notice{padding:11px 13px;border-left:4px solid var(--gold);background:#fff9ed;border-radius:7px}.watermark{position:relative;overflow:hidden}.watermark:after{content:"MRH EDUCATION";position:absolute;right:8px;bottom:8px;color:#123a7830;font-size:12px;font-weight:900;pointer-events:none}
+@media(min-width:760px){.grid{grid-template-columns:repeat(3,1fr)}.hero{padding:42px}.profile{grid-template-columns:130px 1fr}.avatar{width:130px;height:130px;font-size:35px}}
+</style>
+</head>
+<body>
+<header><div class="header">
+<div class="logo">MRH</div>
+<div class="brand"><h1>MRH EDUCATION</h1><p>Learn • Practice • Succeed</p></div>
+<button class="lang" id="language">বাংলা</button>
+</div></header>
+<nav><div class="nav" id="nav"></div></nav>
+
+<main id="main"></main>
+
+<footer>
+<div><strong>MRH EDUCATION</strong></div>
+<div class="footer-links">
+<a href="https://t.me/mrh_1118" target="_blank">Telegram: mrh_1118</a>
+<a href="mailto:mrh.dltpr@gmail.com">mrh.dltpr@gmail.com</a>
+<a href="tel:+918972949607">8972949607</a>
+</div>
+<div class="small">English • বাংলা | Watermarked PDFs • Videos • Online Classes • Online Tests</div>
+</footer>
+
+<script>
+const T={
+en:{home:"Home",about:"About MRH",courses:"Courses",pdf:"PDF Library",video:"Video Library",classes:"Online Classes",tests:"Online Tests",contact:"Contact",welcome:"Learn English & CDP with MRH EDUCATION",sub:"A bilingual learning platform for structured study, practice and examination preparation.",explore:"Explore Learning",teacher:"About the Teacher",bio:"MRH — M.A. in English & B.Ed.",teach:"Teaching English and Child Development & Pedagogy (CDP) at BPTTI.",free:"Free Learning",premium:"Premium Learning",coming:"Content will be added progressively.",notice:"Your detailed biodata will be added section by section.",join:"Join / Contact",subjects:"Core Subjects",english:"English",cdp:"Child Development & Pedagogy",watermark:"Watermarked PDF resources",testdesc:"Practice MCQs, tests and assessment resources.",classdesc:"Online class links and learning sessions.",pdfdesc:"Study materials and downloadable resources.",videodesc:"Recorded lessons and video resources.",contactdesc:"For courses, classes and academic enquiries.",email:"Email",mobile:"Mobile",telegram:"Telegram",soon:"Coming soon",freebadge:"FREE",paid:"PREMIUM"},
+bn:{home:"হোম",about:"MRH সম্পর্কে",courses:"কোর্স",pdf:"PDF লাইব্রেরি",video:"ভিডিও লাইব্রেরি",classes:"অনলাইন ক্লাস",tests:"অনলাইন টেস্ট",contact:"যোগাযোগ",welcome:"MRH EDUCATION-এর সঙ্গে English ও CDP শিখুন",sub:"পরিকল্পিত পড়াশোনা, অনুশীলন ও পরীক্ষার প্রস্তুতির জন্য দ্বিভাষিক শিক্ষামঞ্চ।",explore:"শিক্ষা শুরু করুন",teacher:"শিক্ষক সম্পর্কে",bio:"MRH — English-এ M.A. ও B.Ed.",teach:"BPTTI-তে English এবং Child Development & Pedagogy (CDP) পড়ান।",free:"ফ্রি লার্নিং",premium:"প্রিমিয়াম লার্নিং",coming:"ধীরে ধীরে কনটেন্ট যোগ করা হবে।",notice:"আপনার বিস্তারিত বায়োডাটা ধাপে ধাপে যোগ করা হবে।",join:"যোগাযোগ / অংশগ্রহণ",subjects:"মূল বিষয়",english:"English",cdp:"Child Development & Pedagogy",watermark:"জলছাপযুক্ত PDF রিসোর্স",testdesc:"MCQ, টেস্ট ও মূল্যায়ন রিসোর্স।",classdesc:"অনলাইন ক্লাসের লিংক ও লার্নিং সেশন।",pdfdesc:"স্টাডি ম্যাটেরিয়াল ও রিসোর্স।",videodesc:"রেকর্ডেড লেসন ও ভিডিও রিসোর্স।",contactdesc:"কোর্স, ক্লাস ও একাডেমিক যোগাযোগের জন্য।",email:"ইমেইল",mobile:"মোবাইল",telegram:"টেলিগ্রাম",soon:"শীঘ্রই",freebadge:"ফ্রি",paid:"প্রিমিয়াম"}
+};
+let lang="en",page="home";
+function t(k){return T[lang][k]||k}
+function nav(){document.getElementById("nav").innerHTML=[
+["home","🏠"],["about","👨‍🏫"],["courses","📚"],["pdf","📄"],["video","🎥"],["classes","🧑‍🏫"],["tests","📝"],["contact","📞"]
+].map(x=>`<button onclick="go('${x[0]}')">${x[1]} ${t(x[0])}</button>`).join("")}
+function go(x){page=x;render()}
+document.getElementById("language").onclick=()=>{lang=lang==="en"?"bn":"en";document.getElementById("language").textContent=lang==="en"?"বাংলা":"English";render()}
+function render(){nav();const m=document.getElementById("main");m.innerHTML=views[page]()}
+const views={
+home:()=>`<section class="hero"><h2>${t("welcome")}</h2><p>${t("sub")}</p><div class="buttons"><button class="primary" onclick="go('courses')">${t("explore")}</button><button class="secondary" onclick="go('contact')">${t("join")}</button></div></section>
+<section class="section"><h2>${t("subjects")}</h2><div class="grid">
+<div class="card"><div class="icon">🔤</div><h3>${t("english")}</h3><p class="small">Grammar • Vocabulary • Reading • Writing • Exam preparation</p></div>
+<div class="card"><div class="icon">🧠</div><h3>${t("cdp")}</h3><p class="small">Child development • Learning theories • Pedagogy • Assessment</p></div>
+<div class="card"><div class="icon">💧</div><h3>${t("watermark")}</h3><p class="small">${t("pdfdesc")}</p></div></div></section>
+<section class="section"><h2>${t("free")}</h2><div class="grid"><div class="card"><b>📄 ${t("pdf")}</b><p class="small">${t("pdfdesc")}</p><span class="badge">${t("freebadge")}</span></div><div class="card"><b>📝 ${t("tests")}</b><p class="small">${t("testdesc")}</p><span class="badge">${t("freebadge")}</span></div><div class="card"><b>🎥 ${t("video")}</b><p class="small">${t("videodesc")}</p><span class="badge">${t("freebadge")}</span></div></div></section>
+<section class="section"><div class="notice">${t("notice")}</div></section>`,
+about:()=>`<section class="card"><div class="profile"><div class="avatar">MRH</div><div><h2>${t("teacher")}</h2><h3>${t("bio")}</h3><p>${t("teach")}</p></div></div></section><section class="card"><h3>Professional Profile</h3><p class="small">${t("notice")}</p></section>`,
+courses:()=>`<section class="hero"><h2>${t("courses")}</h2><p>${t("coming")}</p></section><div class="grid"><div class="card"><span class="badge">${t("freebadge")}</span><h3>English</h3><p class="small">Grammar, vocabulary and exam-oriented lessons.</p></div><div class="card"><span class="badge">${t("freebadge")}</span><h3>CDP</h3><p class="small">Child Development & Pedagogy lessons.</p></div><div class="card"><span class="badge">${t("paid")}</span><h3>Premium Test Series</h3><p class="small">${t("coming")}</p></div></div>`,
+pdf:()=>`<section class="card watermark"><h2>📄 ${t("pdf")}</h2><p>${t("pdfdesc")}</p><div class="notice">${t("coming")}</div></section>`,
+video:()=>`<section class="card"><h2>🎥 ${t("video")}</h2><p>${t("videodesc")}</p><div class="notice">${t("coming")}</div></section>`,
+classes:()=>`<section class="card"><h2>🧑‍🏫 ${t("classes")}</h2><p>${t("classdesc")}</p><div class="notice">${t("coming")}</div></section>`,
+tests:()=>`<section class="card"><h2>📝 ${t("tests")}</h2><p>${t("testdesc")}</p><div class="notice">${t("coming")}</div></section>`,
+contact:()=>`<section class="card"><h2>📞 ${t("contact")}</h2><p>${t("contactdesc")}</p><div class="contact"><div><b>${t("telegram")}:</b> <a href="https://t.me/mrh_1118" target="_blank">mrh_1118</a></div><div><b>${t("email")}:</b> <a href="mailto:mrh.dltpr@gmail.com">mrh.dltpr@gmail.com</a></div><div><b>${t("mobile")}:</b> <a href="tel:+918972949607">8972949607</a></div></div></section>`
+};
+render();
+</script>
+</body>
+</html>
